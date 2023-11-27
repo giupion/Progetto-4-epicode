@@ -1,0 +1,16 @@
+
+body{margin:0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Vina Sans', sans-serif;
+   }
+
+ul{display: flex;
+flex-direction:row;
+
+justify-content: flex-start;}
+
+li{list-style-type: none;}
+
+article{display: flex;
+flex-direction: row;}
+
