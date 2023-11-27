@@ -13,11 +13,27 @@ header.style.transition="background-color 1s ease-out "
 button.style.transition="background-color 1s ease-out "}});
 
 
+function mRandom() {
+    let m = document.querySelectorAll('g[opacity]');
+
+    m.forEach(element => {
+        let randomOpacity =  Math.round(Math.random());
+        element.setAttribute('opacity', randomOpacity);
+        element.classList.add('randoM');
+    });
+}
+
+mRandom();
+setInterval(mRandom, 2000);
+
+
+console.dir(m)
 
 
 
-const lettera = document.getElementById("m");
-setInterval(function() {lettera.style.transition="opacity 10s ease "}, 10
-);
+//const lettera = document.querySelectorAll("svg");
+//setInterval(function() (svg.forEach(ele)=> {ele.style.opacity=0}), 1000
+//);
 
-console.log(window)
+//console.log(window)
+//console.log(m)
