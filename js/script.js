@@ -1,5 +1,5 @@
-let header=document.querySelector("header")
-let button=document.querySelector("header nav ul li>button")
+let header=document.querySelector("nav")
+let button=document.querySelector(" nav div>button")
 document.addEventListener('scroll',function(){
 
     let scrollPos=window.pageYOffset;
