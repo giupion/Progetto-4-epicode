@@ -19,7 +19,7 @@ function mRandom() {
     m.forEach(element => {
         let randomOpacity =  Math.round(Math.random());
         element.setAttribute('opacity', randomOpacity);
-        element.classList.add('randoM');
+        
     });
 }
 
