@@ -13,4 +13,11 @@ header.style.transition="background-color 1s ease-out "
 button.style.transition="background-color 1s ease-out "}});
 
 
+
+
+
+const lettera = document.getElementById("m");
+setInterval(function() {lettera.style.transition="opacity 10s ease "}, 10
+);
+
 console.log(window)

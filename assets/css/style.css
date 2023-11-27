@@ -31,7 +31,11 @@ justify-content:space-evenly;
 }
 
 
-li {list-style-type: none;
+li {
+    display:flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    list-style-type: none;
 
 
 }
@@ -57,6 +61,8 @@ border-radius: 15px;
 
 article button a{color:white;
 text-decoration: none;}
+
+
 #staycurios{
     height: 40%;
 width:80%;}
