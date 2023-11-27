@@ -3,14 +3,43 @@ body{margin:0 auto;
     font-family: 'Roboto', sans-serif;
     font-family: 'Vina Sans', sans-serif;
    }
+header{position:relative;
+    position:sticky;
+    top:0;
+    width: 100%;
+    }
+
+    nav{display: flex;
+        justify-content:flex-start;
+        justify-content:space-around;
+      
+   }
 
 ul{display: flex;
+    width: 30%;
 flex-direction:row;
+justify-content:space-evenly;
+align-items:center;
+}
 
-justify-content: flex-start;}
+li {list-style-type: none;
+display: flex;
 
-li{list-style-type: none;}
+}
+
+li a{text-decoration: none;
+   }
+
+   h1{font-size:8rem;}
+p{font-size:3em;}
 
 article{display: flex;
-flex-direction: row;}
+flex-direction: row;
 
+align-items: center;}
+
+
+#staycurios{
+    
+    height: 40%;
+width:40%}
