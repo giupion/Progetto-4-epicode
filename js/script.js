@@ -19,12 +19,12 @@ function mRandom() {
     m.forEach(element => {
         let randomOpacity =  Math.round(Math.random());
         element.setAttribute('opacity', randomOpacity);
-        
+        element.classList.add('randoM');
     });
 }
 
 mRandom();
-setInterval(mRandom, 2000);
+setInterval(mRandom, 800);
 
 
 console.dir(m)
