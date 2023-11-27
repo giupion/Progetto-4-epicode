@@ -7,7 +7,14 @@ header{position:relative;
     position:sticky;
     top:0;
 background-color: #ffc017;
+padding:20px;
     }
+
+    header button{border-radius: 15px;
+    padding: 15px;
+background-color: #191919;}
+header a{text-decoration: none;
+color: whitesmoke;}
 
     nav{display: flex;
       flex-direction: row;
@@ -19,8 +26,7 @@ ul{display: flex;
     width: 100%;
 flex-direction:row;
 align-items: center;
-justify-content:space-around;
-
+justify-content:space-evenly;
 
 }
 
@@ -44,8 +50,34 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
     }
+    article button{padding:20px;
+    background-color:#191919 ;
+border-radius: 15px;
+}
 
-
+article button a{color:white;
+text-decoration: none;}
 #staycurios{
     height: 40%;
-width:80%}
+width:80%;}
+
+
+#trending{
+  width:100%;
+    display:flex;
+flex-direction: row;
+align-items: baseline;
+flex-wrap:wrap ;}
+
+#titolo{
+    width: 90%;
+    display: flex;
+align-items: baseline;
+margin-bottom:15px;}
+
+#flexarticlecolumn{
+    
+    display:flex;
+flex-direction: column;}
+
+
