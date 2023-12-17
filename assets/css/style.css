@@ -107,7 +107,7 @@ font-size: 12px;
 
    .num{display:flex;}
 
-   .trending-sup{border-bottom:  1px solid #ddd;;}
+   .trending-sup{border-bottom:  1px solid#ddd;}
 
 
    .flexarticlecolumn{display:flex;
@@ -117,7 +117,8 @@ width:60%;}
 .discover{display:flex;
     flex-wrap: wrap;
     justify-content: center;
-  
+  position:sticky;
+  top:0;
     width:40%;}
 
     .allineadiscover{display: flex;}
@@ -133,7 +134,7 @@ width:60%;}
     }
 
 
-
+.grosso{width:80%;}
 
       
     
