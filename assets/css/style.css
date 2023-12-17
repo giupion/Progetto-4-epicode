@@ -98,7 +98,7 @@ font-size: 12px;
 .trending{ border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
-    flex: 0 0 45%; /* Imposta larghezza e margine tra le caselle */
+    flex: 0 0 30%; /* Imposta larghezza e margine tra le caselle */
     margin: 5px;
 
 }
@@ -137,7 +137,7 @@ align-items: baseline;}
 
 .grosso{width:80%;}
 
-.flexarticlecolumn img{width:150px;
+.flexarticlecolumn img{width:200px;
 height:150px;}
 
 .flexaimmagini{display:flex;
