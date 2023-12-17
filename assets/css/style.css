@@ -101,7 +101,7 @@ font-size: 12px;
     flex: 0 0 45%; /* Imposta larghezza e margine tra le caselle */
     margin: 5px;}
 
-   
+   .num{display:flex;}
 
    
 
@@ -109,24 +109,7 @@ font-size: 12px;
 
 
 
-    #trending{
-        width:100%;
-          display:flex;
-      flex-direction: row;
-      align-items: baseline;
-      flex-wrap:wrap ;}
+
       
-      #titolo{
-          width: 90%;
-          display: flex;
-      align-items: baseline;
-      margin-bottom:15px;}
-      
-      #flexarticlecolumn{
-          
-          display:flex;
-      flex-direction: column;}
-      
-      
-      #allineadiscover{display:flex;}
+    
     
