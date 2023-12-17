@@ -112,29 +112,42 @@ font-size: 12px;
 
    .flexarticlecolumn{display:flex;
 flex-direction: column;
-width:60%;}
+width:60%;
+
+align-items: baseline;}
 
 .discover{display:flex;
     flex-wrap: wrap;
     justify-content: center;
-  position:sticky;
-  top:0;
+    position:sticky;
+    top:0;
     width:40%;}
 
-    .allineadiscover{display: flex;}
+    .allineadiscover{display: flex;
+    flex-direction: row;}
 
    
 
     .discover div>a{ 
         padding: 15px;
-        
-       
         margin: 5px;
     
     }
 
 
 .grosso{width:80%;}
+
+.flexarticlecolumn img{width:150px;
+height:150px;}
+
+.flexaimmagini{display:flex;
+flex-direction: row;
+width:120%;
+margin-bottom:20px;
+}
+.flexatutto{display:flex;
+    flex-direction: column;
+    width:60%;}
 
       
     
