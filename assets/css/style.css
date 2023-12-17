@@ -99,9 +99,26 @@ font-size: 12px;
     padding: 10px;
     text-align: left;
     flex: 0 0 45%; /* Imposta larghezza e margine tra le caselle */
-    margin: 5px;}
+    margin: 5px;
+
+}
+.separa-section{margin-bottom: 50px;
+}
 
    .num{display:flex;}
+
+   .trending-sup{border-bottom:  1px solid #ddd;;}
+
+
+   .flexarticlecolumn{display:flex;
+flex-direction: column;
+width:60%;}
+
+.discover{display:flex;
+    
+    width:40%;}
+
+    .allineadiscover{display: flex;}
 
    
 
