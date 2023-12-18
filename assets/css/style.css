@@ -119,29 +119,27 @@ align-items: baseline;}
 .discover{display:flex;
     flex-wrap: wrap;
     justify-content: center;
-   
-    width:40%;}
+    width:60%;}
 
     .allineadiscover{display: flex;
     flex-direction: row;
     
 }
 
-   .discover div{position:relative;
-    position:sticky;
-    top: 200px;}
-
+   
+.sticky h4{padding:15px;}
     .sticky{position:relative;
         position:sticky;
         top: 200px;}
+
     .discover div>a{ 
         padding: 15px;
-        margin: 5px;
-        
+        margin-bottom: 15px;
+        text-decoration: none;
     }
 
 
-.grosso{width:80%;}
+.grosso{width:100%;}
 
 .flexarticlecolumn img{width:200px;
 height:150px;}
