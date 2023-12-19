@@ -245,3 +245,11 @@ border-radius:50%;
 
 .flexatutto h2{font-size:larger;
 font-weight: bolder;}
+
+
+.allinea-immagini{display:flex;
+flex-direction:row;
+align-items: center;}
+
+.flexatitolo{display: flex;
+align-items: center;}
