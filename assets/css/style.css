@@ -172,7 +172,7 @@ font-size: small;}
    .flexarticlecolumn{display:flex;
 flex-direction: column;
 width:60%;
-
+margin-left:40px;
 align-items: baseline;}
 
 .discover{display:flex;
