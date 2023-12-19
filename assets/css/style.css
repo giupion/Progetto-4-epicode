@@ -179,6 +179,8 @@ align-items: baseline;}
     flex-wrap: wrap;
     justify-content: right;
     width:40%;
+   
+    
 }
 
     .allineadiscover{display: flex;
@@ -199,6 +201,8 @@ align-items: baseline;}
         margin-bottom: 15px;
         text-decoration: none;
         color:grey;
+        font-size: 10px;
+       
     }
 
     .discover h4{
@@ -214,7 +218,7 @@ height:150px;}
 
 .flexaimmagini{display:flex;
 flex-direction: row;
-width:120%;
+width:100%;
 margin-bottom:20px;
 align-items:center;
 
