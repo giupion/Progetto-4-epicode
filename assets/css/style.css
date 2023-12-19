@@ -178,7 +178,7 @@ align-items: baseline;}
 .discover{display:flex;
     flex-wrap: wrap;
     justify-content: right;
-    width:60%;}
+    width:40%;}
 
     .allineadiscover{display: flex;
     flex-direction: row;
@@ -225,7 +225,7 @@ align-items:center;
 
 
 
-.sticky a{ line-height: 20px;
+.category{ line-height: 20px;
 display: inline-block;
 
 border:1px solid #ddd;}
