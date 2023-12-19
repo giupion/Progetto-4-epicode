@@ -249,7 +249,15 @@ font-weight: bolder;}
 
 .allinea-immagini{display:flex;
 flex-direction:row;
-align-items: center;}
+}
 
-.flexatitolo{display: flex;
-align-items: center;}
+.flexatitolo{ display: flex;
+align-items: center;
+margin-bottom:15px;
+  }
+
+  .flexamin{ display: flex;
+    flex-direction: row;
+      }
+
+  .flexatitolo h5{margin-bottom: 0;}
