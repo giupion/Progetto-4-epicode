@@ -178,7 +178,8 @@ align-items: baseline;}
 .discover{display:flex;
     flex-wrap: wrap;
     justify-content: right;
-    width:40%;}
+    width:40%;
+}
 
     .allineadiscover{display: flex;
     flex-direction: row;
