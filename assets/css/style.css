@@ -226,7 +226,7 @@ align-items:center;
 
 
 
-.category{ line-height: 20px;
+.category{ 
 display: inline-block;
 
 border:1px solid #ddd;}
@@ -261,3 +261,5 @@ margin-bottom:15px;
       }
 
   .flexatitolo h5{margin-bottom: 0;}
+
+  .help a{ display: inline-block;}
