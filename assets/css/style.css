@@ -221,7 +221,8 @@ align-items:center;
 height: 15px;
 }
 
-
+.sticky a{ line-height: 20px;
+display: inline-block;}
       
     
     
