@@ -211,20 +211,31 @@ flex-direction: row;
 width:120%;
 margin-bottom:20px;
 align-items:center;
+
 }
 .flexatutto{display:flex;
     flex-direction: column;
     width:60%;
 }
 
-.flexatutto img{width:15px;
-height: 15px;
-}
+
 
 .sticky a{ line-height: 20px;
 display: inline-block;
 
 border:1px solid #ddd;}
+
+.flexatutto img{height:20px;
+width:20px;
+border-radius:50%;
+}
       
     
     
+.flexatutto h5,h4,h3,h2{margin-bottom: 15px;}
+
+.flexatutto h5{font-size: small;
+    font-weight: bolder;}
+
+.flexatutto h2{font-size:larger;
+font-weight: bolder;}
