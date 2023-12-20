@@ -54,7 +54,7 @@ nav div:last-child > button{
 }
 
 
-
+/*navbar*/
 
    h1{font-size:5rem;
 }
@@ -178,7 +178,7 @@ align-items: baseline;}
 .discover{display:flex;
     flex-wrap: wrap;
     justify-content: right;
-    width:40%;
+  
    
     
 }
@@ -192,9 +192,10 @@ align-items: baseline;}
    
 .sticky h4{padding:15px;}
     
-.sticky{position:relative;
+aside footer{position:relative;
         position:sticky;
-        top: 150px;}
+        top: 150px;
+   }
 
     .discover div>a{ 
         padding: 15px;
