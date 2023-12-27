@@ -1,474 +1,7 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
   }
-
-
-  .container{ margin-inline: 24px;}
-
-
-  @media screen and (min-width: 728px) {
-    .container {
-      margin-inline: 48px;
-    }
-  }
-  @media screen and (min-width: 1300px) {
-    .container {
-      max-width: 1200px;
-      margin-inline: auto;
-    }
-  }
-
-  @media screen and (max-width: 727px) {
-    nav .menu li:not(:nth-last-child(2)):not(:last-child) {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 551px) {
-    nav .menu li:nth-last-child(2) {
-      display: none;
-    }
-  }
-.flex{display:flex;}
-
-.align-center{align-items:center;}
-
-
-.space-between{justify-content: space-between;}
-
-.align-baseline{align-items: baseline;}
-.menu{font-size: 0.85em;
-    margin-block: 1.125rem;}
-
-    
-.menu li{display: inline-block;
-    vertical-align: middle;
-    }
-
-.menu li a{text-decoration: none;
-color:black;
-}
-
-.menu  button{border-radius: 15px;
-    padding: 15px;
-background-color: #191919;
-color: white;
-line-height: 20px;
-}
-
-
-nav,
-.hero {
-    border-bottom: 1px solid black;
-  }
-nav{position:fixed; /*position sticky va solo all'interno di header...quindi si usa position fixed*/
-top:0;
-left:0;
-right:0;
-
-}
-/*fino ai 727 non mostrare p primi due figli  li display none ma non su sign in e bottom a partire dal button 1*/
-
-
-header{ background-color: #ffc017;}
-.hero {
- 
-    overflow: hidden;/*serve a nascondere le m al di sotto di hero section*/
-  position: relative;/*positzionato hero relativamente alla sua posizione normale*/
-}
-.hero .artwork {
-  position: absolute; /*artwork per i cazzo loro con absolute come posizione*/
-  top:100px;
-  left: 500px;
-  width: 585px;
-}
-
-  .hero .content {
-  width: 555px; /*dai dimensioni fisse a content e artwork*/
-  padding-top: 100px;
-  padding-bottom: 105px;
-}
-
-.hero .content h1 {
-    font-size: 70px;
-    letter-spacing: -0.05em;
-  
-    line-height: 1;
-    margin-block: 0;
-    font-family: "Spectral", serif;
-  }
-
- .hero .content h3 {
-  width: 80%;
-  font-size: 24px;
-  line-height: 1;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  margin-block: 1em;
-}
-  
-.hero .content button {
-  margin-top: 1.5rem;
-  font-size: 20px;
-  border-radius: 15px;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top:10px;
-  padding-bottom:10px;
-background-color: #191919;
-color: white;
-line-height: 20px;
-}
-  .hero .content button a{text-decoration: none;
-color:white;}
-
-nav .menu li  {
-    margin-right: 25px;
-  }
-
-/*fino a 728px non mostrare più hero. artwork*/
-@media screen and (min-width: 552px) {
-  .hero .content h1 {
-    font-size: 85px;
-    line-height: 88px;
-  }
-}
-
-@media screen and (min-width: 904px) {
-  .hero .content h1 {
-    font-size: 109px;
-    letter-spacing: -6px;
-  }}
-
-  @media screen and (max-width: 728px) {
-    .hero .artwork {
-      display: none;
-    }
-  }
-  
-  @media screen and (min-width: 1080px) {
-    .hero .artwork {
-      left: initial;
-      right: 0;
-    }
-  }
-  
-  section.trending {
-    padding-top: 40px;
-    padding-bottom: 16px;
-  }
-  
-  section.trending .trending-title-section {
-    margin-bottom: 10px;
-  }
-  
-  section.trending img[src$="trending.svg"] {
-    margin-right: 12px;
-  }
-
-
-  section.trending .grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin-inline: -16px;
-  }
-
-
-  section.trending .col .num {
-    font-size: 30px;
-    line-height: 36px;
-    color: rgba(230, 230, 230, 1);
-    font-weight: 900;
-    line-height: 1;
-  }
-
-  .flex-vertical {
-    flex-direction: column;
-  }
-  
-  .avatar-title img {
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 0.5rem;
-  }
-
-  .avatar-title h4 {
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: 700;
-  }
-
-  .avatar-title h4 .in {
-    color: rgba(117, 117, 117, 1);
-  }
-
-  .bottom-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .bottom-info span {
-    color: rgba(117, 117, 117, 1);
-    font-size: 13px;
-    line-height: 20px;
-    white-space: nowrap;
-  }
-
-  .bottom-info .dot {
-    padding-inline: 0.25rem;
-  }
-
-
-  section.trending > .container > .grid > .col {
-    width: 100%; /* fallback */
-    flex-basis: 100%; 
-    margin-bottom: 24px;
-    padding-inline: 16px;
-  }
-
-  section.trending .col > .flex {
-    column-gap: 20px;
-  }
-
-/*da 728px in pratica la largezza è del 50% di ogni colonna cosicche a 728 ne entrano due a colonna*/
-  @media screen and (min-width: 728px) {
-    section.trending > .container > .grid > .col {
-      width: 50%; 
-      flex-basis: 50%; /*setta la larghezza di flex*/
-      margin-bottom: 24px;
-      padding-inline: 16px;
-    }
-  }
-  /*da 1080px in pratica la  largezza di col è del 50% di ogni colonna cosicche a 1080 ne entrano tre a colonna*/
-  @media screen and (min-width: 1080px) {
-    section.trending > .container > .grid > .col {
-      width: 33.333%; 
-      flex-basis: 33.333%;/*setta la larghezza di flex*/
-      margin-bottom: 24px;
-      padding-inline: 16px;
-    }
-  }
-  
-  section.trending .col > .flex {
-    column-gap: 20px;
-  }
-  
-  section.trending .col .num {
-    font-size: 30px;
-    line-height: 36px;
-    color: rgba(230, 230, 230, 1);
-    font-weight: 900;
-    line-height: 1;
-  }
-  
-  section.trending .content h2 {
-    font-weight: 900;
-    margin-block: 10px;
-  }
-
-  section.wall {
-    padding-top: 56px;
-    border-top: 1px solid rgba(230, 230, 230, 1);
-  }
-
-  section.wall .grid {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  section.wall .grid > .col-main {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 100%;
-    width: 100%;
-    overflow-x: auto;
-  }
-
-
-  section.wall {
-    padding-top: 56px;
-    border-top: 1px solid rgba(230, 230, 230, 1);
-  }
-
-  section.wall .grid {
-    display: flex;
-    align-items: flex-start;
-  }
-  /*condizioni normali*/
-  section.wall .grid > .col-main {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 100%;
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  /*da tablet a 903 cambia ordine con meno 1 va alla parte superiore va in cima*/
-  @media screen and (max-width: 903px) {
-    section.wall .grid {
-      flex-wrap: wrap;
-    }
-  
-    section.wall .grid > aside {
-      order: -1;
-      width: 100%;
-      margin-block-end: 24px;
-    }
-  }
-
-
-  @media screen and (min-width: 904px) {
-    section.wall .grid {
-      column-gap: 8.333%;
-    }
-  
-    section.wall .grid > .col-main {
-      flex-grow: 0;
-      flex-shrink: 0;
-      flex-basis: 58.333%;
-      width: 58.333%;
-    }
-  
-    section.wall .grid > aside {
-      min-height: 30px;
-      position: sticky;
-      top: 110px;
-    }
-  }
-  
-  section.wall .grid > aside h4 {
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-/*flexare card e contenuto*/
-  section.wall .card {
-    display: flex;
-    column-gap: 28px;
-    margin-bottom: 48px;
-  }
-
-  section.wall .card .content {
-    flex: 1 1 200px;
-    min-width: 200px;
-  }
-
-  section.wall .card .content + img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
-  
-
-  @media screen and (min-width: 576px) {
-    section.wall .card .content + img {
-      width: 150px;
-    }
-  }
-
-
-  @media screen and (min-width: 728px) {
-    section.wall .card .content + img {
-      width: 200px;
-      height: 134px;
-    }
-  }
-
-
-  section.wall .card .avatar-title {
-    padding-bottom: 8px;
-  }
-  
-  section.wall .card h3 {
-    font-size: 22px;
-    line-height: 28px;
-    font-weight: 900;
-  }
-  
-  section.wall .card p {
-    font-size: 16px;
-    line-height: 20px;
-    padding-top: 3px;
-    display: -webkit-box;
-   
-    overflow: hidden;
-    color: rgba(117, 117, 117, 1);
-  }
-
-
-  section.wall .card .bottom-info {
-    padding-top: 8px;
-  }
-  @media screen and (max-width: 575px) {
-    section.wall .card .bottom-info .badge {
-      display: none;
-    }
-  }
-  
-  section.wall .card img[src$="star.svg"] {
-    margin-left: 0.25rem;
-  }
-  
-  aside h4 {
-    margin-bottom: 16px;
-  }
-  
-  aside .categories {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 24px;
-    width: 50%;
-  }
-
-  
-  aside .categories .category {
-    font-size: 13px;
-    line-height: 20px;
-    padding: 6px 16px;
-    border: 1px solid rgba(230, 230, 230, 1);
-    color: rgba(117, 117, 117, 1);
-    letter-spacing: 0.25px;
-    margin-bottom: 8px;
-    margin-right: 8px;
-    border-radius: 2px;
-  }
-
-
-  aside footer {
-    padding-top: 24px;
-    border-top: 1px solid rgba(230, 230, 230, 1);
-  }
-
-
-  aside footer ul {
-    list-style: none;
-  }
-  
-  aside footer ul li {
-    display: inline-block;
-    margin-right: 24px;
-    margin-bottom: 8px;
-  }
-  aside footer li a {
-    font-size: 14px;
-    line-height: 20px;
-    color: rgba(117, 117, 117, 1);
-    text-decoration: none;
-  }
-  
-  
-/*se usi position sticky si comporta da sticky finche si trova nell'header in questo caso meglio usare position fixed
-/*
 header{position:relative;
 background-color: #ffc017;
 z-index: 30;
@@ -476,6 +9,19 @@ position: sticky;
 top: 0;
     }
 
+
+    @media screen and (min-width: 728px) {
+        .container {
+          margin-inline: 48px;
+        }
+      }
+      
+      @media screen and (min-width: 1300px) {
+        .container {
+          max-width: 1200px;
+          margin-inline: auto;
+        }
+      }
     header button{border-radius: 15px;
     padding: 15px;
 background-color: #191919;}
@@ -521,7 +67,19 @@ nav div:last-child > button{
 }
 
 
+@media screen and (max-width: 727px) {
+    nav  a:not(:nth-last-child(2)):not(:last-child) {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 551px) {
+    nav a:nth-last-child(2) {
+      display: none;
+    }
+  }
 
+/*navbar*/
 
    h1{font-size:5rem;
 }
@@ -568,10 +126,9 @@ margin-bottom:15px;
 }
 
 #stay{ font-family: 'Spectral', serif;
-
 }
 .flexa{display: flex;
-
+flex-direction: row;
 justify-content: space-between;}
 
 
@@ -591,8 +148,44 @@ border-radius:50%;}
     justify-content: center;
  align-content: center;
 }
+@media screen and (min-width: 552px) {
+    .staycurios h1 {
+      font-size: 85px;
+      line-height: 88px;
+    }
+  }
+  
+  @media screen and (min-width: 904px) {
+    .staycurios h1 {
+      font-size: 109px;
+      letter-spacing: -6px;
+    }
+  }
+  @media screen and (max-width: 728px) {
+    article .artwork {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 1080px) {
+ article .artwork {
+      left: initial;
+      right: 0;
+    }
+  }
 
 
+  @media screen and (max-width: 903px) {
+   .allineadiscover{
+      flex-wrap: wrap;
+    }
+  
+    aside footer  .discover > .sticky{
+      order: -1;
+      width: 100%;
+      margin-block-end: 24px;
+    }
+  }
 
 .titolotrending{
 margin-bottom: 0;
@@ -613,7 +206,7 @@ margin-bottom: 0;
 .trending{ border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
-    flex: 0 0 30%; /* Imposta larghezza e margine tra le caselle 
+    flex: 0 0 30%; /* Imposta larghezza e margine tra le caselle */
     margin: 5px;
 line-height: 30px;
 
@@ -740,5 +333,3 @@ margin-bottom:15px;
   .flexatitolo h5{margin-bottom: 0;}
 
   .help a{ display: inline-block;}
-
-  */
