@@ -176,7 +176,7 @@ border-radius:50%;}
 
 
   @media screen and (max-width: 903px) {
-   .allineadiscover{
+    .allineadiscover {
       flex-wrap: wrap;
     }
   
