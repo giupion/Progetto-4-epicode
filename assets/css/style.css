@@ -218,3 +218,49 @@ margin-right: 5px;
                       padding-inline: 16px;
                     }
                   }
+
+
+                  /*section 2 articolo sinistra*/
+
+                  .allinea-titolo{display:flex;
+                align-items: center;}
+
+                .allinea-titolo img{width:20px;
+                border-radius:50%;}
+
+                .card{display:flex;}
+
+
+.infoinferioricolonna{display:flex;
+   
+align-items: center;}
+
+.contenuto h4{font-size: small;
+    font-weight: bold;
+color:black}
+
+.contenuto h3{font-size: large;
+    font-weight: bold;
+color:black}
+.contenuto p{color:grey;}
+
+.contenuto span{color:grey;
+font-size: small;}
+
+.contenuto .badge {
+   color:white;
+   background-color: grey;
+   padding:5px 5px;
+   border-radius:10px;
+  }
+
+
+
+
+                .allinea-info{display:flex;
+                    align-items: center;
+             }
+
+             .dot{margin-inline: 10px;}
+
+             
