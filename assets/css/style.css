@@ -72,7 +72,8 @@ left:500px;
 top:50px;
 overflow: hidden;}
 
-
-@media screen and (min-width:768px ) {
-  
+/*per tablet responsive faccio scomparire tutti i figli tranne sign in e button per telefono invece rimane solo il button*/
+@media screen and (max-width:768px ) {
+  nav .barramenu li:not(:nth-last-child(2)):not(:last-child){display: none;}
   }
+
