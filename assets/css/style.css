@@ -72,10 +72,10 @@ color: black;
 
 }
 
-.contenuto h3{width:60%;
+.contenuto h3{width:68%;
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
-    font-size: medium;
+    font-size: small;
     }
 
 .contenuto button{ padding-left: 80px;
@@ -85,9 +85,15 @@ font-size: large;}
 .emme{position:absolute;
 width:585px;
 left:500px;
-top:50px;
+top:100px;
 }
 
+/*per desktop metti al margine artwork emme posizionato in absolute*/
+@media screen and (min-width:1080px ) {
+    .emme{left:initial;
+        right:0;
+        }
+    }
 
 .eroe{background-color: #ffc017;
     overflow: hidden;
