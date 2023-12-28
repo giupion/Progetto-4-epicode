@@ -56,8 +56,10 @@ color: black;
 z-index: 1;
 }
 
-.contenuto h3{width:80%;
+.contenuto h3{width:60%;
     margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
     }
 
 .contenuto button{ padding-left: 80px;
@@ -69,3 +71,8 @@ width:585px;
 left:500px;
 top:50px;
 overflow: hidden;}
+
+
+@media screen and (min-width:768px ) {
+  
+  }
