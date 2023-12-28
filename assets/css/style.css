@@ -178,6 +178,7 @@ margin-right: 5px;
             flex-direction: column;}
         
         .infoinferiori{display:flex;
+            align-items: center;
             justify-content: space-between;}
 
             .nonpoint{display:none}
@@ -230,10 +231,17 @@ margin-right: 5px;
 
                 .card{display:flex;}
 
+                /*allora, basta mettere immagini in due div separati e per staccarlo basta meetere in entrambi i contenitori space between cosi il secondo fa spazio da dall primo contenitore*/
+                .infoinferioricolonna{display:flex;
+                    justify-content: space-between;
+                                         align-items: center;}
 
-.infoinferioricolonna{display:flex;
-   
-align-items: center;}
+                .allinea-info{display:flex;
+                    align-items: center;
+                    justify-content: space-between;}
+
+                   
+                        
 
 .contenuto h4{font-size: small;
     font-weight: bold;
@@ -255,12 +263,6 @@ font-size: small;}
   }
 
 
-
-
-                .allinea-info{display:flex;
-                    align-items: center;
-             }
-
-             .dot{margin-inline: 10px;}
-
+.dot{margin-right: 10px;
+    margin-left: 10px;}
              
