@@ -72,10 +72,10 @@ color: black;
 
 }
 
-.contenuto h5{width:68%;
+.contenuto h3{width:68%;
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
-    font-size: small;
+    font-size: medium;
     }
 
 .contenuto button{ padding-left: 80px;
