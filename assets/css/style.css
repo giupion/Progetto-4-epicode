@@ -223,13 +223,24 @@ margin-right: 5px;
 
                   /*section 2 articolo sinistra*/
 
+                  section.articlesinistra .grigliayo > .colonnaprincipale {
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    flex-basis: 100%;
+                    width: 100%;
+                    overflow-x: auto;
+                  }
+
+                  .grigliayo{display: flex;}
+
                   .allinea-titolo{display:flex;
                 align-items: center;}
 
                 .allinea-titolo img{width:20px;
                 border-radius:50%;}
 
-                .card{display:flex;}
+                .card{display:flex;
+                align-items: center;}
 
                 /*allora, basta mettere immagini in due div separati e per staccarlo basta meetere in entrambi i contenitori space between cosi il secondo fa spazio da dall primo contenitore*/
                 .infoinferioricolonna{display:flex;
@@ -295,32 +306,36 @@ margin-bottom: 40px;}
 
 /*per tablet max a 728 cambio ordine dell'aside e lo metto all'inizio*/
 @media screen and (max-width: 728px) {
-    section.articlesinistra .griglia {
+    section.articlesinistra .grigliayo{
       flex-wrap: wrap;
     }
   
-    section.articlesinistra .griglia > aside {
+    section.articlesinistra .grigliayo > aside {
       order: -1;
       width: 100%;
       margin-block-end: 24px;
     }
   }
-  /*aldila tablet   da 728 aumento gap delle colonne rendo stick e metto a lato l'aside*/
+  /*aldila tablet   da 728 aumento gap delle colonne rendo sticky */
   @media screen and (min-width: 728px) {
-    section.articlesinistra .griglia {
+    section.articlesinistra .grigliayo {
       column-gap: 8.333%;
     }
   
-    section.articlesinistra .griglia > .colonnaprincipale {
+    section.articlesinistra .grigliayo > .colonnaprincipale {
       flex-grow: 0;
       flex-shrink: 0;
       flex-basis: 58.333%;
       width: 58.333%;
     }
   
-    section.articlesinistra .griglia > aside {
+    section.articlesinistra .contenitore>.grigliayo>aside  {
       min-height: 30px;
       position: sticky;
       top: 110px;
     }
+
+    
   }
+
+  
