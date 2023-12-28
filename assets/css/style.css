@@ -76,4 +76,13 @@ overflow: hidden;}
 @media screen and (max-width:768px ) {
   nav .barramenu li:not(:nth-last-child(2)):not(:last-child){display: none;}
   }
+/*mobile*/
+  @media screen and (max-width:640px ) {
+    nav .barramenu li:not(:last-child){display: none;}
+    }
 
+    /*faccio scomparire artwork emme*/
+
+    @media screen and (max-width:640px ) {
+        .emme{display: none;}
+        }
