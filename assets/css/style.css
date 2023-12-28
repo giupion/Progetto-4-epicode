@@ -200,7 +200,7 @@ margin-right: 5px;
 
               /*per tablet da 728 faccio in modo che riduca la casella di 50 per farne vedere 2 a colonna*/
               @media screen and (min-width:728px ) {
-                section > .contenitore > .griglia > .colonna {
+                section.titolo-trending > .contenitore > .griglia > .colonna {
                     width: 50%; 
                     flex-basis: 50%;
                     margin-bottom: 24px;
@@ -212,7 +212,7 @@ margin-right: 5px;
             
                   /*per desktop da 1080 faccio in modo che riduca la casella di 33 per farne vedere 3 a colonna*/
                   @media screen and (min-width: 1080px) {
-                    section > .contenitore > .griglia > .colonna {
+                    section.titolo-trending > .contenitore > .griglia > .colonna {
                       width: 33.333%; /* fallback */
                       flex-basis: 33.333%;
                       margin-bottom: 24px;
@@ -274,6 +274,7 @@ font-size: small;}
     font-weight: bold;}
         .tipi{display: flex;
     flex-wrap: wrap;
+    
    }
 
     .miscellaneous{margin:10px 10px 10px  0;
@@ -291,3 +292,35 @@ margin:10px 10px 10px  0;
 
    .dividisezione{margin-top: 40px;
 margin-bottom: 40px;}  
+
+/*per tablet max a 728 cambio ordine dell'aside e lo metto all'inizio*/
+@media screen and (max-width: 728px) {
+    section.articlesinistra .griglia {
+      flex-wrap: wrap;
+    }
+  
+    section.articlesinistra .griglia > aside {
+      order: -1;
+      width: 100%;
+      margin-block-end: 24px;
+    }
+  }
+  /*aldila tablet   da 728 aumento gap delle colonne rendo stick e metto a lato l'aside*/
+  @media screen and (min-width: 728px) {
+    section.articlesinistra .griglia {
+      column-gap: 8.333%;
+    }
+  
+    section.articlesinistra .griglia > .colonnaprincipale {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 58.333%;
+      width: 58.333%;
+    }
+  
+    section.articlesinistra .griglia > aside {
+      min-height: 30px;
+      position: sticky;
+      top: 110px;
+    }
+  }
