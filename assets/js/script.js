@@ -1,5 +1,5 @@
 let header=document.querySelector("nav")
-let button=document.querySelector(" nav div>button")
+let button=document.querySelector(" nav button")
 document.addEventListener('scroll',function(){
 
     let scrollPos=window.pageYOffset;
@@ -27,7 +27,7 @@ mRandom();
 setInterval(mRandom, 800);
 
 
-console.dir(m)
+
 
 
 
