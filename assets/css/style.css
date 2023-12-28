@@ -36,7 +36,8 @@ nav {
     border-bottom: 2px solid black;
     transition: background-color 0.6s;
     background-color: #ffc017;
-
+padding-top:20px;
+padding-bottom:20px;
    
   }
 
@@ -58,7 +59,7 @@ letter-spacing: -2;}
 padding-top:100px;
 padding-left: 25px;
 color: black;
-z-index: 1;
+
 }
 
 .contenuto h3{width:60%;
@@ -104,3 +105,33 @@ top:50px;
         /*section*/
         .flexatitolotrending{display: flex;
         align-items:center;}
+
+
+        .flexatitolotrending h3{font-size:15px;}
+
+
+        .griglia{display: flex;
+       }
+
+
+    .colonna{display:flex;
+    }
+
+    .flexacolonna{display: flex;
+    flex-direction: row;}
+
+        .num{
+            color:rgb(203, 197, 197);
+            font-weight: 900;
+        font-size: 20px;
+    line-height: 36px;
+}
+
+       
+
+        .contenutocolonna{flex-direction: column;}
+        
+        .infoinferiori{display:flex;
+            justify-content: space-between;}
+
+            .nonpoint{display:none}

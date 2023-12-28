@@ -1,9 +1,9 @@
 let header=document.querySelector("nav")
-let button=document.querySelector(" nav button")
+let button=document.querySelector(" nav li>button")
 document.addEventListener('scroll',function(){
 
-    let scrollPos=window.pageYOffset;
-    if(scrollPos>100){header.style.backgroundColor="white";
+    let scrollPos=window.scrollY;
+    if(scrollPos>1){header.style.backgroundColor="white";
     button.style.backgroundColor="#1a8917";
 header.style.transition="background-color 1s ease;"
 button.style.transition="background-color 1s ease;"}
