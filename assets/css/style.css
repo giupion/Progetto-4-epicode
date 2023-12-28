@@ -132,7 +132,7 @@ padding-top:40px;} /*con position relative lo posizio rispetto al normale flusso
 
     .colonna{display:flex;
         border:1px solid grey;
-        column-gap: 20px;
+        
     }
 
     
@@ -226,7 +226,7 @@ margin-right: 5px;
                   section.articlesinistra .grigliayo > .colonnaprincipale {
                     flex-grow: 0;
                     flex-shrink: 0;
-                    flex-basis: 100%;
+                    flex-basis: 80%;
                     width: 100%;
                     overflow-x: auto;
                   }
@@ -234,13 +234,13 @@ margin-right: 5px;
                   .grigliayo{display: flex;}
 
                   .allinea-titolo{display:flex;
-                align-items: center;}
+                align-items:center;}
 
                 .allinea-titolo img{width:20px;
                 border-radius:50%;}
 
                 .card{display:flex;
-                align-items: center;}
+                align-items: end;}
 
                 /*allora, basta mettere immagini in due div separati e per staccarlo basta meetere in entrambi i contenitori space between cosi il secondo fa spazio da dall primo contenitore*/
                 .infoinferioricolonna{display:flex;
@@ -329,13 +329,22 @@ margin-bottom: 40px;}
       width: 58.333%;
     }
   
-    section.articlesinistra .contenitore>.grigliayo>aside  {
-      min-height: 30px;
-      position: sticky;
-      top: 110px;
-    }
-
-    
+    section.articlesinistra .grigliayo > aside {
+        min-height: 30px;
+        position: sticky;
+        top: 110px;
+      }
   }
 
+  section.articlesinistra {
+    padding-top: 56px;
+    border-top: 1px solid rgba(230, 230, 230, 1);
+  }
   
+  
+
+  section.articlesinistra .card .contenuto + img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
