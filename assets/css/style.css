@@ -1,6 +1,14 @@
 
 /*header*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+/*The box-sizing property allows us to include the padding and border in an element's total width and height.
+
+fa in modo che la box sizing sia incluso di padding e margin per uniformare box*/
 .flexanav{display:flex;
 align-items: center;
 justify-content: space-between;}
@@ -107,7 +115,10 @@ top:50px;
         align-items:center;}
 
 
-        .flexatitolotrending h3{font-size:15px;}
+        .flexatitolotrending h3{font-size:15px;
+        text-transform: uppercase;
+    font-family: 'font-family: "Roboto", sans-serif;';
+    font-weight: 500px;}
 
 
         .griglia{display: flex;
@@ -116,12 +127,39 @@ top:50px;
 
 
     .colonna{display:flex;
+        border:1px solid grey;
+        column-gap: 20px;
     }
 
-    .flexacolonna{display: flex;
-    flex-direction: row;}
+    
+    .colonna h1{font-size: 13px;
+        color:gray;
+        margin-bottom: 10px;
+    }
+    .colonna h3{font-size: 15px;
+        color:black;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
-        .num{
+    
+
+    .flexacolonna{display: flex;
+    flex-direction: row;
+align-items: baseline;
+}
+
+
+.titolo-avatar{ display: flex;
+    flex-direction: row;
+   
+    align-items: baseline;}
+
+.titolo-avatar img{border-radius: 50%;
+width:15px;
+margin-right: 15px;}
+
+        .num{margin-right: 15px;
             color:rgb(203, 197, 197);
             font-weight: 900;
         font-size: 20px;
@@ -136,3 +174,38 @@ top:50px;
             justify-content: space-between;}
 
             .nonpoint{display:none}
+
+            .infoinferiori span{font-size: 13px;
+                color:grey;
+                
+            }
+
+
+            
+            section > .contenitore > .griglia > .colonna {
+                width: 100%; /* fallback */
+                flex-basis: 100%;
+                margin-bottom: 24px;
+                      padding-inline: 16px;
+              }
+            
+              @media screen and (min-width:728px ) {
+                section > .contenitore > .griglia > .colonna {
+                    width: 50%; /* fallback */
+                    flex-basis: 50%;
+                    margin-bottom: 24px;
+                      padding-inline: 16px;
+                  }
+                }
+
+
+            
+                  
+                  @media screen and (min-width: 1080px) {
+                    section > .contenitore > .griglia > .colonna {
+                      width: 33.333%; /* fallback */
+                      flex-basis: 33.333%;
+                      margin-bottom: 24px;
+                      padding-inline: 16px;
+                    }
+                  }
