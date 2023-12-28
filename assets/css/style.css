@@ -27,13 +27,18 @@ font-family: inherit;}
 .flexanav img{margin-left: 25px;}
 
 
-nav{position:fixed;
-top:0;
-left:0;
-right: 0;
-bottom:0;
- background-color: #ffc017; ;
-}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-bottom: 2px solid black;
+    transition: background-color 0.6s;
+    background-color: #ffc017;
+
+   
+  }
 
 
 .flexacontenutoemme{display:flex;}
@@ -41,7 +46,7 @@ bottom:0;
 
 body {
     font-family: "Roboto", sans-serif;
-  
+    
   }
 
   .contenuto h1{font-family: "Spectral", serif;
@@ -70,7 +75,15 @@ font-size: large;}
 width:585px;
 left:500px;
 top:50px;
-overflow: hidden;}
+}
+
+
+.eroe{background-color: #ffc017;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+    position: relative;
+    padding-bottom: 40px;} /*con position relative lo posizio rispetto al normale flusso documento*/
+
 
 /*per tablet responsive faccio scomparire tutti i figli tranne sign in e button per telefono invece rimane solo il button*/
 @media screen and (max-width:768px ) {
@@ -88,4 +101,6 @@ overflow: hidden;}
         }
 
 
-        
+        /*section*/
+        .flexatitolotrending{display: flex;
+        align-items:center;}
