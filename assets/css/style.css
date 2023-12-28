@@ -269,6 +269,9 @@ font-size: small;}
 
     /*aside*/
     aside {  padding-inline: 16px;}
+
+    aside h3 {  text-transform: uppercase;
+    font-weight: bold;}
         .tipi{display: flex;
     flex-wrap: wrap;
    }
