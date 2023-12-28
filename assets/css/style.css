@@ -91,7 +91,8 @@ top:50px;
     overflow: hidden;
     border-bottom: 2px solid black;
     position: relative;
-    padding-bottom: 40px;} /*con position relative lo posizio rispetto al normale flusso documento*/
+    padding-bottom: 40px;
+padding-top:40px;} /*con position relative lo posizio rispetto al normale flusso documento*/
 
 
 /*per tablet responsive faccio scomparire tutti i figli tranne sign in e button per telefono invece rimane solo il button*/
@@ -112,13 +113,16 @@ top:50px;
 
         /*section*/
         .flexatitolotrending{display: flex;
-        align-items:center;}
+        align-items:center;
+    margin-top: 40px;
+    }
 
+        .flexatitolotrending img{margin-right: 15px;}
 
         .flexatitolotrending h3{font-size:15px;
         text-transform: uppercase;
     font-family: 'font-family: "Roboto", sans-serif;';
-    font-weight: 500px;}
+    font-weight: bold;}
 
 
         .griglia{display: flex;
@@ -152,12 +156,13 @@ align-items: baseline;
 
 .titolo-avatar{ display: flex;
     flex-direction: row;
-   
-    align-items: baseline;}
+  
+    align-items:start}
 
 .titolo-avatar img{border-radius: 50%;
 width:15px;
-margin-right: 15px;}
+margin-right: 5px;
+}
 
         .num{margin-right: 15px;
             color:rgb(203, 197, 197);
@@ -168,7 +173,9 @@ margin-right: 15px;}
 
        
 
-        .contenutocolonna{flex-direction: column;}
+        .contenutocolonna{
+            display: flex;
+            flex-direction: column;}
         
         .infoinferiori{display:flex;
             justify-content: space-between;}
