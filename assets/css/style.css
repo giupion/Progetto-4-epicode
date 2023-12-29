@@ -270,7 +270,7 @@ margin-right: 5px;
                   margin-bottom: 48px;}
 
                   section.articlesinistra .card .contenuto1 {
-                    flex: 1 1 200px; /*immagine flex grow per contenuto 1 ,flex riduci a 1 e grandezza 200*/
+                    flex: 1 1 200px; /*immagine flex grow per contenuto 1 ,flex riduci a 1 e grandezza base 200*/
                     min-width: 200px;
                   }
                 
