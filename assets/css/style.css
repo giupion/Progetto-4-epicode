@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-html{width:100%;}
 /*The box-sizing property allows us to include the padding and border in an element's total width and height.
 
 fa in modo che la box sizing sia incluso di padding e margin per uniformare box*/
@@ -51,8 +50,7 @@ padding-bottom:20px;
   }
 
 
-.flexacontenutoemme{display:flex;
-padding:80px;}
+.flexacontenutoemme{display:flex;}
 
 
 body {
@@ -72,7 +70,7 @@ color: black;
 
 }
 
-.contenuto h3{width:68%;
+.contenuto h3{width:60%;
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
     font-size: medium;
@@ -85,15 +83,9 @@ font-size: large;}
 .emme{position:absolute;
 width:585px;
 left:500px;
-top:100px;
+top:50px;
 }
 
-/*per desktop metti al margine artwork emme posizionato in absolute*/
-@media screen and (min-width:1080px ) {
-    .emme{left:initial;
-        right:0;
-        }
-    }
 
 .eroe{background-color: #ffc017;
     overflow: hidden;
@@ -236,11 +228,11 @@ margin-right: 5px;
                     flex-shrink: 0;
                     flex-basis: 80%;
                     width: 100%;
-                    
+                    overflow-x: auto;
                   }
 
                   .grigliayo{display: flex;
-                align-items: start;}
+                    align-items: start;}
 
                   .allinea-titolo{display:flex;
                 align-items:center;}
@@ -288,9 +280,7 @@ font-size: small;}
 
 
     /*aside*/
-    aside {  
-        padding-top:100px;
-        padding-inline: 16px;}
+    aside {  padding-inline: 16px;}
 
     aside h3 {  text-transform: uppercase;
     font-weight: bold;}
@@ -340,7 +330,7 @@ margin-bottom: 40px;}
       width: 58.333%;
     }
   
-  section.articlesinistra .grigliayo >aside {
+    section.articlesinistra .grigliayo > aside {
         min-height: 30px;
         position: sticky;
         top: 110px;
@@ -348,7 +338,7 @@ margin-bottom: 40px;}
   }
 
   section.articlesinistra {
-
+    padding-top: 56px;
     border-top: 1px solid rgba(230, 230, 230, 1);
   }
   
@@ -356,6 +346,6 @@ margin-bottom: 40px;}
 
   section.articlesinistra .card .contenuto + img {
     width: 150px;
-    height: 100px;
+    height: 150px;
     object-fit: cover;
   }
