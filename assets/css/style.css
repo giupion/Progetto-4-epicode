@@ -92,8 +92,8 @@ top:50px;
     overflow: hidden;
     border-bottom: 2px solid black;
     position: relative;
-    padding-bottom: 40px;
-padding-top:40px;} /*con position relative lo posizio rispetto al normale flusso documento*/
+    padding-bottom: 100px;
+padding-top:100px;} /*con position relative lo posizio rispetto al normale flusso documento*/
 
 
 /*per tablet responsive faccio scomparire tutti i figli tranne sign in e button per telefono invece rimane solo il button*/
