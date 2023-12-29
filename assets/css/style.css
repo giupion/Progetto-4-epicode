@@ -246,7 +246,7 @@ margin-right: 5px;
                   section.articlesinistra .grigliayo > .colonnaprincipale {
                     flex-grow: 0;
                     flex-shrink: 0;
-                    flex-basis: 80%;
+                    flex-basis: 100%;
                     width: 100%;
                     overflow-x: auto;
                   }
@@ -275,19 +275,19 @@ margin-right: 5px;
                    
                         
 
-.contenuto h4{font-size: small;
+.contenuto1 h4{font-size: small;
     font-weight: bold;
 color:black}
 
-.contenuto h3{font-size: large;
+.contenuto1 h3{font-size: large;
     font-weight: bold;
 color:black}
-.contenuto p{color:grey;}
+.contenuto1 p{color:grey;}
 
-.contenuto span{color:grey;
+.contenuto1 span{color:grey;
 font-size: small;}
 
-.contenuto .badge {
+.contenuto1 .badge {
    color:white;
    background-color: grey;
    padding:5px 5px;
@@ -302,7 +302,7 @@ font-size: small;}
     /*aside*/
     aside {  padding-inline: 16px;
     
-    padding-top: 100px;}
+    }
 
     aside h3 {  text-transform: uppercase;
     font-weight: bold;}
@@ -367,8 +367,20 @@ margin-bottom: 40px;}
   
   
 
-  section.articlesinistra .card .contenuto + img {
-    width: 150px;
+  section.articlesinistra .card .contenuto1 + img {
+    width: 100px;
     height: 100px;
     object-fit: cover;
+  }
+
+  @media screen and (min-width: 576px) {
+    section.articlesinistra .card .contenuto1 + img {
+      width: 150px;
+    }
+  }
+  @media screen and (min-width: 728px) {
+    section.articlesinistra .card .contenuto1 + img {
+      width: 200px;
+      height: 134px;
+    }
   }
