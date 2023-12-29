@@ -32,7 +32,7 @@ color:white;
 border-radius: 15px;
 font-family: inherit;}
 
-.flexanav img{margin-left: 25px;}
+.flexanav img{margin-left: 100px;}
 
 
 nav {
@@ -44,8 +44,8 @@ nav {
     border-bottom: 2px solid black;
     transition: background-color 0.6s;
     background-color: #ffc017;
-padding-top:20px;
-padding-bottom:20px;
+padding-top:10px;
+padding-bottom:10px;
    
   }
 
@@ -60,17 +60,17 @@ body {
 
   .contenuto h1{font-family: "Spectral", serif;
     margin-bottom: 20px;
-font-size: 70px;
+font-size: 80px;
 letter-spacing: -2;}
 
-  .contenuto{width:550px;
+  .contenuto{width:600px;
 padding-top:100px;
-padding-left: 25px;
+padding-left: 100px;
 color: black;
 
 }
 
-.contenuto h5{width:68%;
+.contenuto h5{width:60%;
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
     font-size: medium;
@@ -81,9 +81,9 @@ padding-right: 80px;
 font-size: large;}
 
 .emme{position:absolute;
-width:585px;
-
-left:800px;
+width:600px;
+right:0;
+left:900px;
 top:50px;
 }
 
@@ -110,6 +110,25 @@ padding-top:100px;} /*con position relative lo posizio rispetto al normale fluss
     @media screen and (max-width:640px ) {
         .emme{display: none;}
         }
+
+        @media screen and (max-width:1103px ){
+          .emme{position:absolute;
+            width:600px;
+            right:0;
+            left:500px;
+            top:50px;
+            }
+          }
+
+          @media screen and (min-width:1103px ){
+            .emme{position:absolute;
+              width:600px;
+              right:0;
+              left:700px;
+              top:50px;
+              }
+            }
+  
 
 
         /*section*/
